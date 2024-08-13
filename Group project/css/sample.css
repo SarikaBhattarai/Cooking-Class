@@ -1,0 +1,274 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.icons a img {
+    height: 30px;
+    margin-left: 10px;
+}
+
+.search-bar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #6319d1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #e0621f;
+}
+
+main {
+    padding: 20px;
+}
+
+.class-listings {
+    margin-bottom: 40px;
+}
+
+.class-listings h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    transform: scale(1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+table:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+table th, table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+    color: #e0621f;
+    font-weight: bold;
+    text-align: left;
+    transition: background-color 0.3s;
+}
+
+table th:hover {
+    background-color: #e0a4b5;
+}
+
+table td {
+    background-color: #fafafa;
+}
+
+table td img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+table td img:hover {
+    transform: scale(1.1);
+}
+
+.details-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6319d1;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 15px;
+
+}
+
+.details-button:hover {
+    background-color: #e0621f;
+    transform: scale(1.05);
+}
+
+.class-details {
+    margin: 40px 0;
+}
+
+.class-details h2 {
+    font-size: 28px;
+    color: #e0621f;
+}
+
+.class-description {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1em;
+}
+
+.details-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.details-text {
+    width: 30%;
+    padding: 2px;
+}
+
+.details-text p {
+    margin-bottom: 10px;
+}
+
+.details-text h3 {
+    margin-top: 0;
+}
+
+.details-boxes {
+    position: relative;
+    bottom: 40px;
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.detail-box {
+    width: 30%;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.detail-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.detail-box .detail-text {
+    padding: 10px;
+}
+
+.detail-box .detail-image {
+    text-align: center;
+}
+
+.detail-box .detail-image img {
+    width: 288px;
+
+    height: 342px;
+    border-top: 1px solid #ddd;
+}
+
+footer {
+    background-color: #e0621f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer .contact-link {
+    color: white;
+    text-decoration: none;
+}
+
+footer .contact-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Testimonials Carousel */
+
+/* Container for testimonials and Cooking Corner info */
+.testimonials-container, .cooking-corner-info {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;    /* Center horizontally */
+    text-align: center;     /* Center text within each box */
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background for a softer look */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    max-width: 1200px; /* Limit max-width for larger screens */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Individual testimonial box styling */
+.testimonial-box {
+    background: #ffffff; /* White background for testimonials */
+    border: 1px solid #ddd;
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px;
+    margin: 10px 0; /* Vertical margin only */
+    width: 100%; /* Full width of the container */
+    max-width: 600px; /* Limit width for readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.testimonial-box:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.rating {
+    color: gold; /* Star color */
+    font-size: 1.5em; /* Larger stars for emphasis */
+    margin-top: 10px; /* Space above rating */
+}
+
+.cooking-corner-info {
+    margin-top: 40px; /* Space between testimonials and info */
+    background-color: #ffffff; /* White background for the section */
+    border-radius: 12px; /* Rounded corners */
+    padding: 30px; /* More padding for better readability */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.cooking-corner-info h2, .cooking-corner-info h3 {
+    color: #222; /* Darker text color for headings */
+    margin-bottom: 15px; /* Increased space below headings */
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+}
+
+.cooking-corner-info p {
+    margin-bottom: 20px; /* Increased space between paragraphs */
+    line-height: 1.8; /* Improved readability */
+    font-size: 1.1em; /* Slightly larger text for better readability */
+    color: #555; /* Softer text color for paragraphs */
+}
