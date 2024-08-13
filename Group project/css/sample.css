@@ -195,12 +195,7 @@ table td img:hover {
     border-top: 1px solid #ddd;
 }
 
-footer {
-    background-color: #e0621f;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
+
 
 footer .contact-link {
     color: white;
