@@ -108,7 +108,7 @@ section img{
 .btns:hover{
     height: 60px;
     width: 170px;
-    background-color: orangered;
+    background-color: #e0621f;
     font-size: large;
 }
 .Classes{
@@ -269,6 +269,10 @@ input{
 
 
 /* css for our store */
+#ourstore_p{
+    margin:10px 100px 10px 100px;
+    text-align: center;
+}
 .wrapped{
     display: flex;
     justify-content: center;
@@ -376,29 +380,313 @@ input{
     font-family: 'Lobster', serif;
     color: #E0621F;
 }
+/*css for Classes page*/
+.search_bar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search_bar input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.search_bar button {
+    padding: 10px 20px;
+    background-color: #6319d1;
+    color: white;
+    border: none;
+    margin-top:20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search_bar button:hover {
+    background-color: #e0621f;
+}
+.h2{
+    font-family: 'Lobster', serif;
+    color: #E0621F;
+}
+.icons a img {
+    height: 30px;
+    margin-left: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+.class-listings {
+    margin-bottom: 40px;
+}
+
+.class-listings h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    transform: scale(1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+table:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+table th, table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+    color: #e0621f;
+    font-weight: bold;
+    text-align: left;
+    transition: background-color 0.3s;
+}
+
+table th:hover {
+    background-color: #e0621f;
+    color: white;
+}
+
+table td {
+    background-color: #fafafa;
+}
+
+table td img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+table td img:hover {
+    transform: scale(1.1);
+}
+
+.details-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6319d1;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 15px;
+
+}
+
+.details-button:hover {
+    background-color: #e0621f;
+    transform: scale(1.05);
+}
+
+.class-details {
+    margin: 40px 0;
+}
+
+.class-details h2 {
+    font-size: 28px;
+    color: #e0621f;
+}
+
+.class-description {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1em;
+}
+
+.details-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.details-text {
+    width: 30%;
+    padding: 2px;
+}
+
+.details-text p {
+    margin-bottom: 10px;
+}
+
+.details-text h3 {
+    margin-top: 0;
+}
+
+.details-boxes {
+    position: relative;
+    bottom: 40px;
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.detail-box {
+    width: 30%;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.detail-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.detail-box .detail-text {
+    padding: 10px;
+}
+
+.detail-box .detail-image {
+    text-align: center;
+}
+
+.detail-box .detail-image img {
+    width: 288px;
+
+    height: 342px;
+    border-top: 1px solid #ddd;
+}
+
+.top{
+    text-align: right;
+}
+/*map*/
+.map-container {
+    background-color: #ffac5c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    margin: auto;
+}
+
+.map-container iframe {
+    border-radius: 10px;
+}
+
+footer .contact-link {
+    color: white;
+    text-decoration: none;
+}
+
+footer .contact-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Testimonials Carousel */
+
+/* Container for testimonials and Cooking Corner info */
+.testimonials-container, .cooking-corner-info {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  
+    text-align: center;    
+    padding: 20px;
+    background-color: #f4f4f4; 
+    border-radius: 12px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+/* Individual testimonial box styling */
+.testimonial-box {
+    background: #ffffff; 
+    border: 1px solid #ddd;
+    border-radius: 12px; 
+    padding: 20px;
+    margin: 10px 0;
+    width: 100%; 
+    max-width: 600px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.testimonial-box:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.rating {
+    color: gold; 
+    font-size: 1.5em; 
+    margin-top: 10px; 
+}
+
+.cooking-corner-info {
+    margin-top: 40px; 
+    background-color: #ffffff; 
+    border-radius: 12px; 
+    padding: 30px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+}
+
+.cooking-corner-info h2, .cooking-corner-info h3 {
+    color: #222; 
+    margin-bottom: 15px; 
+    font-family: 'Arial', sans-serif; 
+}
+
+.cooking-corner-info p {
+    margin-bottom: 20px; 
+    line-height: 1.8; 
+    font-size: 1.1em; 
+    color: #555; 
+}
+
  
 
 /* media query for mobile views */
-/* Our store */
 
 @media screen and (max-width: 600px) {
     body {
         padding: 10px;
     }
-    
+
     .logo {
         flex-direction: column;
         align-items: center;
     }
-    
+    #mainlogo {
+        height: 50px;
+        width: 50px;
+        margin-right: 0;
+    }
     .rightlogos {
         margin-left: 0;
         justify-content: center;
         margin-top: 10px;
     }
-    
+
     .nav {
-        height: auto; 
+        height: auto;
     }
 
     .nav ul {
@@ -408,7 +696,7 @@ input{
         margin: 0;
         text-align: center;
         list-style: none;
-        width: 100%; 
+        width: 100%;
     }
 
     .nav ul li {
@@ -420,9 +708,10 @@ input{
         display: block;
         padding: 10px;
         color: white;
-        background-color: #E0621F; 
+        background-color: #E0621F;
         text-decoration: none;
     }
+
     .foot {
         flex-direction: column;
         align-items: center;
@@ -444,5 +733,216 @@ input{
         width: 50px;
         margin-top: 0;
         border-radius: 10px;
+    }
+
+    .btns {
+        width: 100%; /* Make buttons full width on small screens */
+    }
+
+    .img_txt {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .img_txt .img, .img_txt .text {
+        margin: 0;
+        width: 100%;
+    }
+
+    .map-container {
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 100%;
+    }
+
+    .testimonial-box {
+        width: 100%;
+    }
+
+    .details-boxes {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .detail-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .container {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+    }
+    .items img {
+        width: 100%;
+        height: auto;
+    }
+    .search_bar input[type="text"] {
+        width: 100%;
+    }
+
+    .search_bar button {
+        width: 100%;
+    }
+    .details-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details-text {
+        width: 100%;
+    }
+
+    .details-boxes {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .detail-box {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .details-button{
+       width: auto;
+       margin-bottom: 50px;
+    }
+    }
+    .testimonials-container, .cooking-corner-info {
+        padding: 10px;
+    }
+
+/* Media query for tablet views (landscape and portrait) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        padding: 20px;
+    }
+
+    .logo {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .rightlogos {
+        margin-left: auto;
+        margin-top: 0;
+    }
+
+    .nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .nav ul li {
+        display: inline-block;
+    }
+
+    .nav ul li a {
+        padding: 15px;
+        font-size: medium;
+    }
+
+    .Classes {
+        flex-wrap: wrap;
+    }
+
+    .feat_class {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+
+    .btns {
+        width: 180px;
+    }
+
+    .img_txt {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .text {
+        width: 100%;
+        text-align: center;
+    }
+
+    #imgone {
+        width: 100%;
+        height: auto;
+    }
+
+    .foot {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .foot1, .footicon {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footicon {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .footics {
+        height: 50px;
+        width: 50px;
+        margin-top: 0;
+        border-radius: 10px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+
+    .register-form h3 {
+        font-size: 1.2em;
+    }
+
+    .register {
+        margin-left: 0;
+    }
+
+    .search-bar {
+        margin-left: 0;
+        gap: 5px;
+    }
+
+    .recipe-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .search_bar input[type="text"] {
+        width: 100%;
+        max-width: none;
+    }
+
+    table td img {
+        max-width: 80px;
+    }
+
+    .details-boxes {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .detail-box {
+        width: 100%;
+    }
+
+    .map-container {
+        padding: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
